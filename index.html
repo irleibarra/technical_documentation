@@ -99,12 +99,12 @@
                 <header>Test Docker version</header>
                 <article>
                     <p>Run docker --version and ensure that you have a supported version of Docker:</p>
-                    <code>    >>> docker --version
+                    <code>   docker --version
     Docker version 17.12.0-ce, build c97c6d6
     </code>
                     <p>Run docker info or (docker version without --) to view even more details about your 
                       docker installation:</p>
-                    <code> >>> docker info
+                    <code> docker info
     Containers: 0                
     Running: 0
     Paused: 0
@@ -123,7 +123,7 @@
                 <header>Test Docker Installation</header>
                 <article>
                     <p>Test that your installation works by running the simple Docker image, hello-world:</p>
-                    <code>    >>> docker run hello-world
+                    <code>    docker run hello-world
     Unable to find image 'hello-world:latest' locally
     latest: Pulling from library/hello-world
     ca4f61b1923c: Pull complete
@@ -135,11 +135,11 @@
     ...
     </code>
                     <p>List the hello-world image that was downloaded to your machine:</p>
-                    <code> >>> docker image ls </code>
+                    <code> docker image ls </code>
 
                     <p>List the hello-world container (spawned by the image) which exits after displaying its 
                       message. If it were still running, you would not need the --all option:</p>
-                      <code> >>> docker container ls --all
+                      <code> docker container ls --all
     CONTAINER ID     IMAGE           COMMAND      CREATED            STATUS
     54f4984ed6a8     hello-world     "/hello"     20 seconds ago     Exited (0) 19 seconds ago
     </code>
